@@ -94,7 +94,48 @@ body {
     height: 400px;
     /* Altura de la imagen */
 }
+.imagen-principal {
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    margin: 80px auto;
+    overflow: hidden;
+}
 
+/* IMAGEN PRINCIPAL CON MOVIMIENTO */
+
+.imagen-principal {
+    text-align: center;
+    margin-top: 80px;
+}
+
+/* ANIMACIÓN DE LA IMAGEN */
+
+.animada {
+    width: 1000px;
+    height: 400px;
+
+    object-fit: cover;
+
+    animation: mover 3s infinite ease-in-out;
+}
+
+/* KEYFRAMES (movimiento suave) */
+
+@keyframes mover {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
 /* TÍTULO */
 
 .titulo {
