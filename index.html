@@ -44,7 +44,6 @@
         <!-- Enlaces del menú -->
         <a href="index.html">Inicio</a>
 
-        <a href="contactos.html">Contactos</a>
 
         <a href="iniciosesion.html">Inicio Sesión</a>
 
@@ -57,134 +56,100 @@
 
     </div>
 
-<div class="imagen-principal">
+    <!-- IMAGEN PRINCIPAL -->
+    <div class="imagen-principal">
 
-    <img src="image.jpg" alt="Imagen principal" class="animada">
-
-</div>
-
-    <!-- TÍTULO PRINCIPAL -->
-    <h2 class="titulo">Tipos de teclado</h2>
-
-    <!-- CONTENEDOR DE TARJETAS -->
-    <div class="contenedor-tarjetas">
-
-        <div class="contenedor-tarjetas">
-
-            <!-- TARJETA 1 -->
-            <div class="tarjeta">
-
-                <img src="teclado1.jpg" alt="Teclado mecánico">
-
-                <h3>Teclado mecánico</h3>
-
-                <p>
-                    Usa switches individuales, más rápido y resistente.
-                </p>
-
-            </div>
-
-            <!-- TARJETA 2 -->
-            <div class="tarjeta">
-
-                <img src="teclado2.jpg" alt="Teclado de membrana">
-
-                <h3>Teclado de membrana</h3>
-
-                <p>
-                    Más silencioso y económico, común en oficinas.
-                </p>
-
-            </div>
-
-            <!-- TARJETA 3 -->
-            <div class="tarjeta">
-
-                <img src="teclado3.jpg" alt="Teclado ergonómico">
-
-                <h3>Teclado ergonómico</h3>
-
-                <p>
-                    Diseñado para comodidad y menos cansancio.
-                </p>
-
-            </div>
-
-            <!-- TARJETA 4 -->
-            <div class="tarjeta">
-
-                <img src="teclado4.jpg" alt="Teclado gamer">
-
-                <h3>Teclado gamer</h3>
-
-                <p>
-                    Incluye luces RGB y alta velocidad de respuesta.
-                </p>
-
-            </div>
-
-            <!-- TARJETA 5 -->
-            <div class="tarjeta">
-
-                <img src="teclado5.jpg" alt="Teclado inalámbrico">
-
-                <h3>Teclado inalámbrico</h3>
-
-                <p>
-                    Funciona por Bluetooth o USB sin cables.
-                </p>
-
-            </div>
-
-            <!-- TARJETA 6 -->
-            <div class="tarjeta">
-
-                <img src="teclado6.jpg" alt="Teclado virtual">
-
-                <h3>Teclado virtual</h3>
-
-                <p>
-                    Se usa en pantallas táctiles o dispositivos móviles.
-                </p>
-
-            </div>
-
-        </div>
+        <!-- Imagen que cambiará automáticamente -->
+        <img src="foto2.jpeg" alt="Slider" id="slider" class="animada">
 
     </div>
 
+    <!-- SCRIPT DEL SLIDER -->
+    <script>
+
+        // Lista de imágenes
+        const imagenes = [
+            "foto2.jpeg",
+            "foto3.jpeg",
+            "foto4.jpeg"
+        ];
+
+        // Variable que controla las imágenes
+        let indice = 0;
+
+        // Selecciona la imagen
+        const slider = document.getElementById("slider");
+
+        // Función para cambiar imágenes
+        function cambiarImagen() {
+
+            indice++;
+
+            // Cuando llegue al final vuelve al inicio
+            if (indice >= imagenes.length) {
+
+                indice = 0;
+            }
+
+            // Cambia la imagen
+            slider.src = imagenes[indice];
+        }
+
+        // Cambia imagen cada 3 segundos
+        setInterval(cambiarImagen, 3000);
+
+    </script>
+
+    <!-- TÍTULO PRINCIPAL -->
+    <h2 class="titulo">Información Personal</h2>
+
     <!-- CONTENEDOR MISIÓN Y VISIÓN -->
-    <div class="contenedor-mv">
+    <div class="biogro">
 
-        <!-- TARJETA MISIÓN -->
-        <div class="tarjeta especial">
+        <h3>Autobiografía</h3>
+   
+           <p>
+            Mi nombre es Jhoan Carlos Chen Chá. Nací el 13 de enero del año 2007,
+            en Santa Catalina La Tinta, Alta Verapaz, en el seno de una familia
+            muy humilde. Desde mis primeros años de vida crecí rodeado de
+            limitaciones económicas, pero también en un entorno donde el esfuerzo,
+            el sacrificio y el amor de mis padres estaban siempre presentes.
+            Formo parte de una familia numerosa, ya que tengo siete hermanos,
+            con quienes compartí momentos difíciles, pero también recuerdos muy
+            valiosos que han marcado mi vida.
+        </p>
 
-            <img src="mision.jpg" alt="Misión">
+        <h3>Pasatiempos</h3>
+   
+           <p>
+           Mis pasatiempos favoritos son resolver ejercicios de matemáticas, ya
+           que disfruto poner a prueba mi lógica y aprender nuevas formas de solucionar 
+           problemas. También me gusta escribir y leer poesía, porque me permite expresar 
+           mis pensamientos y emociones de una manera creativa. Además, disfruto hacer 
+           ejercicio para mantenerme activo y saludable. En mi tiempo libre también me 
+           gusta escuchar música y aprender sobre tecnología, ya que siempre encuentro 
+           algo nuevo e interesante que despierta mi curiosidad.
+        </p>
+    
+     
 
-            <h3>Misión</h3>
+        <h3>Misión</h3>
 
-            <p>
-                Brindar información clara, sencilla y educativa sobre los diferentes tipos de teclados,
-                ayudando a los usuarios a comprender sus características, funciones y usos de forma
-                visual, moderna y fácil de entender.
-            </p>
+        <p>
+            Formarme como profesional en Ingeniería en Sistemas, desarrollando mis
+            conocimientos y habilidades técnicas mientras trabajo, con el objetivo
+            de crecer de manera constante, ser responsable en mis estudios y en mi
+            empleo, y aportar soluciones eficientes en el área tecnológica.
+        </p>
 
-        </div>
+        <h3>Visión</h3>
 
-        <!-- TARJETA VISIÓN -->
-        <div class="tarjeta especial">
-
-            <img src="vision.jpg" alt="Visión">
-
-            <h3>Visión</h3>
-
-            <p>
-                Ser una página web informativa reconocida por su contenido educativo y diseño moderno,
-                enfocada en la tecnología y en la enseñanza de periféricos de computadora de manera
-                interactiva y accesible para todos los usuarios.
-            </p>
-
-        </div>
+        <p>
+            Convertirme en un ingeniero en sistemas competente y reconocido por mi
+            esfuerzo, disciplina y ética profesional, logrando estabilidad laboral
+            y crecimiento personal, aplicando la tecnología para mejorar procesos
+            y contribuir positivamente a la sociedad.
+        </p>
 
     </div>
 
